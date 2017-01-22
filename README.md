@@ -2,7 +2,7 @@
 
 This code implements the kernel local descriptors presented in "Kernel Local Descriptors with Implicit Rotation Matching" at ICMR 2015 <https://hal.inria.fr/hal-01145656>. 
 
-<img src="imgs/kde_teaser.jpg" width="900px"/>
+<img src="imgs/kde_teaser.png"/>
 
 KDE is distributed under the _____ License (see the LICENCE file).
 
