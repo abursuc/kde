@@ -1,6 +1,6 @@
 # KDE - Kernel Local Descriptors
 
-This code implements the kernel local descriptors presented in "Kernel Local Descriptors with Implicit Rotation Matching" at ICMR 2015 <https://hal.inria.fr/hal-01145656>. 
+This is a Matlab package the implements the kernel local descriptors presented in "Kernel Local Descriptors with Implicit Rotation Matching" at ICMR 2015 <https://hal.inria.fr/hal-01145656>. 
 
 <img src="imgs/kde_teaser.png" height="350"/>
 
