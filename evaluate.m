@@ -2,8 +2,8 @@
 
 addpath(genpath('./'));
 
-pfolder 		= '/mnt/lascar/toliageo/datasets/patches/';    % brown dataset folder
-ofolder 		= '/mnt/lascar/toliageo/projects/kde/';		  % output folder
+pfolder 		= '/data/patches/';    % brown dataset folder
+ofolder 		= pfolder;				  % output folder
 dpca_val	   = [80];			% PCA output dimensionality to evaluate for
 pw1         = 1.0;			% power-law exponent on initial vectors
 pw2         = 0.5;			% power-law exponent on PCA-reduced vectors
