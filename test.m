@@ -2,13 +2,13 @@
 
 addpath(genpath('./'));
 
-s 				=  64;   % patch size
-kapparho 	=  8;		% kappa for kernel on rho (radius in polar coordinates)
+s 				  = 64;   % patch size
+kapparho 	  = 8;		% kappa for kernel on rho (radius in polar coordinates)
 kappaphi		=	8;		% kappa for kernel on phi (angle in polar coordinates)
 kappatheta	=	8;		% kappa for kernel on theta (relative gradient angle)
-nrho 			=  1;		% number of frequencies for approx. of kernel on rho  
-nphi			=	3;		% number of frequencies for approx. of kernel on phi
-ntheta		=	3;		% number of frequencies for approx. of kernel on theta
+nrho 			  = 1;		% number of frequencies for approx. of kernel on rho  
+nphi			  =	3;		% number of frequencies for approx. of kernel on phi
+ntheta		  =	3;		% number of frequencies for approx. of kernel on theta
 
 % coefficients for the individual embeddings
 crho 		= embcoef(kapparho, nrho);
