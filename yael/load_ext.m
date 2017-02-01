@@ -1,5 +1,7 @@
 % Generic way to load files depending on the type (determined by extension)
 %
+% Author: Herve Jegou, 2011. 
+% Last revision: 08/10/2013
 function [X,Y] = load_ext (filename, nrows, bounds, verbose)
 
 % Retrieve the extension of the file

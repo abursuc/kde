@@ -1,16 +1,20 @@
-% extract descriptors from the Brown dataset
+% Code for the method presented in the paper 
+% A. Bursuc, G. Tolias, and H. Jegou, ICMR 2015, Kernel Local Descriptors with Implicit Rotation Matching
+% This version of the code includes minor bug fixes and produces slightly better performance than in our paper
+
+% script to extract descriptors from the Brown dataset
+
 addpath(genpath('./'));
 
-pfolder 		= '/mnt/lascar/toliageo/datasets/patches/';    % brown dataset folder
-ofolder 		= '/mnt/lascar/toliageo/projects/kde/';		  % output folder
+pfolder 		= '/data/patches/';    % brown dataset folder
+ofolder 		= pfolder;				  % output folder
 s 				=  64;   % patch size
-kapparho 	    =  8;		% kappa for kernel on rho (radius in polar coordinates)
+kapparho 	=  8;		% kappa for kernel on rho (radius in polar coordinates)
 kappaphi		=	8;		% kappa for kernel on phi (angle in polar coordinates)
-kappatheta	    =	8;		% kappa for kernel on theta (relative gradient angle)
+kappatheta	=	8;		% kappa for kernel on theta (relative gradient angle)
 nrho 			=  2;		% number of frequencies for approx. of kernel on rho  
 nphi			=	2;		% number of frequencies for approx. of kernel on phi
-ntheta		    =	3;		% number of frequencies for approx. of kernel on theta
-sge			    = 	150;
+ntheta		=	3;		% number of frequencies for approx. of kernel on theta
 
 % coefficients for the individual embeddings
 crho 		= embcoef(kapparho, nrho);
@@ -21,7 +25,10 @@ ctheta 	= embcoef(kappatheta, ntheta);
 [epos, phi] = embfixedpos(cphi, crho, s);
 pre.epos = epos; pre.phi = phi;
 
-p=gcp('nocreate');if isempty(p),poolsize=0;else,poolsize=p.NumWorkers;end;if sge&poolsize~=sge,delete(p);parpool(sge);end
+if exist([pfolder, '/liberty/'], 'file') ~= 7 | exist([pfolder, '/notredame/'], 'file') ~= 7 | exist([pfolder, '/yosemite/'], 'file') ~= 7
+	system('wget http://cmp.felk.cvut.cz/~toliageo/ext/brown/data.tar.gz --directory-prefix /tmp/'); 
+	system(sprintf('tar -xzvf /tmp/data.tar.gz -C %s', pfolder));
+end
 
 datasets = {'liberty', 'notredame', 'yosemite'};
 for d = 1:numel(datasets)

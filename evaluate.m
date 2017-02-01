@@ -1,11 +1,12 @@
-% evaluate descriptors from the Brown dataset
+% script to evaluate descriptors from the Brown dataset
+
 addpath(genpath('./'));
 
 pfolder 		= '/mnt/lascar/toliageo/datasets/patches/';    % brown dataset folder
 ofolder 		= '/mnt/lascar/toliageo/projects/kde/';		  % output folder
-dpca_val	    = [80];			% PCA output dimensionality to evaluate for
-pw1             = 1.0;			% power-law exponent on initial vectors
-pw2             = 0.5;			% power-law exponent on PCA-reduced vectors
+dpca_val	   = [80];			% PCA output dimensionality to evaluate for
+pw1         = 1.0;			% power-law exponent on initial vectors
+pw2         = 0.5;			% power-law exponent on PCA-reduced vectors
 
 load(fullfile(ofolder, 'vecs.mat'), 'vecs');
 datasets = {'liberty', 'notredame', 'yosemite'};
