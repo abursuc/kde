@@ -37,10 +37,10 @@ If you use this work please cite our publication  "Kernel Local Descriptors with
 
 ```
 @inproceedings{Bursuc15,
+  title     = {Kernel Local Descriptors with Implicit Rotation Matching},
   author    = {Bursuc, Andrei and Tolias, Giorgos and J{\'e}gou, Herv{\'e}},
-  title     = {{Kernel Local Descriptors with Implicit Rotation Matching}},
-  url       = {https://hal.inria.fr/hal-01145656},
-  booktitle = {{ACM International Conference on Multimedia Retrieval }},
-  year      = {2015}
-  }
+  booktitle = {ACM International Conference on Multimedia Retrieval},
+  year      = {2015},
+  url       = {https://hal.inria.fr/hal-01145656}
+}
 ```
