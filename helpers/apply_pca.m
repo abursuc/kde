@@ -1,4 +1,7 @@
 % apply PCA for dimensionality reduction
+%
+% Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
+%
 function x_ = apply_pca (x, xm, eigvec, dout)
 
 if ~exist ('dout')

@@ -1,5 +1,7 @@
 % simple test extracting KDE (KErnel Descriptor) from a 64x64 patch
-
+%
+% Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
+%
 addpath(genpath('./'));
 
 s 				  = 64;   % patch size

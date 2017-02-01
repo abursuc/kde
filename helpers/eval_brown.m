@@ -1,3 +1,4 @@
+% Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
 function res = eval_brown (x, pairs)
 
   idx1 = pairs(:, 1) + 1;

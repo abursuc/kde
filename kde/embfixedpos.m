@@ -8,7 +8,7 @@
 %   epos : embeddings for all pixel positions
 %   phi  : angle phi for all pixels
 % 
-% Author: Andrei Bursuc, 2015. 
+% Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
 function [epos, phi] = embfixedpos(cphi, crho, s)
 
 	% fixed grid of the patch

@@ -1,4 +1,7 @@
 % compute patch gradients (magnitude and orientation)
+%
+% Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
+%
 function [mag, ori, gx, gy] = gradpatch(patch)
 
 	gx = [ patch(:,2)-patch(:,1) , patch(:,3:end)-patch(:,1:end-2) , patch(:,end)-patch(:,end-1) ] ;

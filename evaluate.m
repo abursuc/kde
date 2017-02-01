@@ -1,5 +1,7 @@
 % script to evaluate descriptors from the Brown dataset
-
+%
+% Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
+%
 addpath(genpath('./'));
 
 pfolder 		= '/data/patches/';     % brown dataset folder
