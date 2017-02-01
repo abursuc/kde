@@ -12,7 +12,7 @@ This code implements:
 3. Evaluation on the Brown patch dataset
 
 ## Execution
-1) Run the following script:
+Run the following script:
 
 ```
 >> extract
