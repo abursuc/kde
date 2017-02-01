@@ -12,12 +12,25 @@ This code implements:
 3. Evaluation on the Brown patch dataset
 
 ## Execution
-1) Run the following script:
+Run the following script:
 
 ```
 >> extract
 >> evaluate
 ```
+
+## Performance
+False Positive Rate at 95% recall on Brown patch dataset:
+
+|Train set | Test set | RootSIFT (128d) | RootSIFT-PCA (80d) | KDE_{3,2,2}-PCA (80d) |
+|:---:|:---:|:---:|:---:|:---:|
+|notredame | liberty| 29.64 | 19.34| 11.73|
+|yosemite |liberty | 29.64| 19.95 |12.42 |
+|notredame | yosemite | 26.69| 18.37|7.17 |
+|liberty | yosemite| 26.69| 19.52| 8.39|
+|liberty | notredame | 22.06|13.90 | 5.09|
+|yosemite |notredame | 22.06| 13.98| 5.19|
+
 
 ## Citation
 

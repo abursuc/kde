@@ -1,4 +1,3 @@
-% function res = eval_brown (x, pairs)
 function res = eval_brown (x, pairs)
 
   idx1 = pairs(:, 1) + 1;
