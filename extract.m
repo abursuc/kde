@@ -27,6 +27,7 @@ pre.epos = epos; pre.phi = phi;
 
 if exist([pfolder, '/liberty/'], 'file') ~= 7 | exist([pfolder, '/notredame/'], 'file') ~= 7 | exist([pfolder, '/yosemite/'], 'file') ~= 7
 	system('wget http://cmp.felk.cvut.cz/~toliageo/ext/brown/data.tar.gz --directory-prefix /tmp/'); 
+	if exist(pfolder, 'file') ~=7, mkdir(pfolder); end 
 	system(sprintf('tar -xzvf /tmp/data.tar.gz -C %s', pfolder));
 end
 

@@ -7,6 +7,7 @@
 %   ctheta : embedding coefficients for theta
 %   v      : kernel descriptor (l2 normalized)
 % 
+% Author: Andrei Bursuc, 2015. 
 function v = kde(patch, pre, ctheta)
 
 % gaussian smoothing 

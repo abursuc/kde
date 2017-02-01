@@ -6,6 +6,7 @@
 %   kappa: von mises shape parameter
 %   an : Fourier coefficients
 % 
+% Author: Herve Jegou, 2014.
 function an = embcoef (kappa, n)
 
 C = 0.5 * (besseli(0,kappa)-exp(-kappa)) / sinh(kappa);
