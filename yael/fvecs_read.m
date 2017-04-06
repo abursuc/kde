@@ -5,6 +5,7 @@
 %   v = fvecs_read (filename)     -> read all vectors
 %   v = fvecs_read (filename, n)  -> read n vectors 
 %   v = fvecs_read (filename, [a b]) -> read the vectors from a to b (indices starts from 1)
+
 function v = fvecs_read (filename, bounds)
 
 % open the file and count the number of descriptors

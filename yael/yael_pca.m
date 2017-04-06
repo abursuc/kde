@@ -8,6 +8,7 @@
 %
 % Author: Herve Jegou, 2011. 
 % Last revision: 08/10/2013
+
 function [X, eigvec, eigval, Xm] = yael_pca (X, dout, center, verbose)
 
 if nargin < 3,         center = true; end

@@ -8,13 +8,14 @@
 %   v      : kernel descriptor (l2 normalized)
 % 
 % Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
+
 function v = kde(patch, pre, ctheta)
 
 % gaussian smoothing 
 if exist('vl_imsmooth')
-	patch = vl_imsmooth(patch, 1.4); %vl_feat was used in the paper
+    patch = vl_imsmooth(patch, 1.4); %vl_feat was used in the paper
 else
-	patch = imfilter(patch, fspecial('gaussian', [5 5], 1.4), 'same', 'replicate');
+    patch = imfilter(patch, fspecial('gaussian', [5 5], 1.4), 'same', 'replicate');
 end
 % patch gradients
 [mag, theta] = gradpatch(patch);    

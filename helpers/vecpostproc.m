@@ -1,7 +1,7 @@
 % suite of descriptor post-processing operations
 %
 % Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
-%
+
 function x = vecpostproc(x, a) 
     if ~exist('a'), a = 1; end
     x = replacenan (vecs_normalize (powerlaw (x, a)));

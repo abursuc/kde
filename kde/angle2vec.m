@@ -7,6 +7,7 @@
 %   x : matrix [dxN] of vectors of angles, each column corresponds to an angle
 % 
 % Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
+
 function x = angle2vec (an, theta)
 
 n = numel (theta);

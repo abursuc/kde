@@ -5,7 +5,7 @@
 % Authors: A. Bursuc, G. Tolias, H. Jegou. 2015. 
 %
 % script to extract descriptors from the Brown dataset
-%
+
 addpath(genpath('./'));
 
 pfolder 		=  '/data/patches/';    % brown dataset folder
